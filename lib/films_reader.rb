@@ -13,11 +13,11 @@ module FilmsReader
     document = Nokogiri::HTML(html)
 
     document.css('td.titleColumn').map do |item|
-      Film.new({
+      Film.new(
                  title: item.css('a').text,
                  director: item.at('a')['title'].split(' (dir.)')[0],
                  year: item.css('span').text.delete('()')
-               })
+               )
     end
   end
   

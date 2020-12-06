@@ -1,4 +1,3 @@
-# Класс Фильмов.
 class Film
   attr_reader :title, :director, :year
 

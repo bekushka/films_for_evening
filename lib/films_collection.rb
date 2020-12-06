@@ -5,7 +5,7 @@ class FilmsCollection
     @films = films
   end
 
-  def show_director_list
+  def director_list
     @director_list = director_all.sample(20)
     @director_list.map.with_index(1) { |director, index| "#{index} #{director}" }
   end
