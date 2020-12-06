@@ -14,10 +14,10 @@ module FilmsReader
 
     document.css('td.titleColumn').map do |item|
       Film.new(
-                 title: item.css('a').text,
-                 director: item.at('a')['title'].split(' (dir.)')[0],
-                 year: item.css('span').text.delete('()')
-               )
+        title: item.css('a').text,
+        director: item.at('a')['title'].split(' (dir.)')[0],
+        year: item.css('span').text.delete('()')
+      )
     end
   end
   
