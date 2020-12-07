@@ -7,5 +7,5 @@
 
 ```$ git clone git@github.com:bekushka/films_for_evening.git
 $ cd ./films_for_evening-main
-$ bundle exec ruby main.rb
+$ ruby main.rb
 ```
